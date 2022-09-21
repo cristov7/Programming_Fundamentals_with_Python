@@ -3,6 +3,8 @@ while True:
     if 1 <= number <= 100:
         print(f"The number {number} is between 1 and 100")
         break
+    else:
+        continue
 
 # number = float(input())
 # while not (1 <= number <= 100):
