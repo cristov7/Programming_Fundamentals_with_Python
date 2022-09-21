@@ -1,9 +1,11 @@
-n = int(input())
-for i in range(n):
-    number = int(input())
-    if number % 2 != 0:
-        print(f"{number} is odd!")
+number = int(input())
+for numbers in range(number):
+    current_number = int(input())
+    if current_number % 2 != 0:
+        print(f"{current_number} is odd!")
         break
+    else:
+        continue
 else:
     print("All numbers are even.")
 
