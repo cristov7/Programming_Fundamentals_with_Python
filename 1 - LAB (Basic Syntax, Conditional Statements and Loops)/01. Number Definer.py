@@ -1,7 +1,5 @@
 number = float(input())
-if number == 0:
-    print("zero")
-elif number > 0:
+if number > 0:
     if number < 1:
         print("small positive")
     elif number < 1000000:
@@ -15,3 +13,5 @@ elif number < 0:
         print("negative")
     else:
         print("large negative")
+else:   # number == 0:
+    print("zero")
