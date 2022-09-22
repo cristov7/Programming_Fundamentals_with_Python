@@ -1,4 +1,5 @@
-# Software University - Programming Fundamentals with Python - September 2022
+# Software University - September 2022
+# Programming Fundamentals with Python
 In this repository there are solutions to tasks from the programming Fundamentals course with Python of the software academy of SoftUni University.
 
 https://softuni.bg/trainings/3840/programming-fundamentals-with-python-september-2022
