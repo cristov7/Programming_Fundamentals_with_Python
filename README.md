@@ -11,3 +11,4 @@ Online judge system - https://judge.softuni.org/
 # Table of Contents:
 
 - Basic Syntax, Conditional Statements and Loops
+- Data Types and Variables
