@@ -4,3 +4,4 @@ In this repository there are solutions to tasks from the programming Fundamental
 https://softuni.bg/trainings/3733/programming-fundamentals-with-python-may-2022
 
 Online judge system - https://judge.softuni.org/
+![image](https://user-images.githubusercontent.com/114032977/191654383-66852f3f-ead9-4ef0-8b51-feb0dea131eb.png)
