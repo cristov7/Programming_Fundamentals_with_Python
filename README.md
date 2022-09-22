@@ -1,2 +1,2 @@
-# Programming_Fundamentals_with_Python
-Programming Fundamentals with Python - September 2022
+# Programming Fundamentals with Python - September 2022
+In this repository there are solutions to tasks from the programming Fundamentals course with Python of the software academy of SoftUni University.
