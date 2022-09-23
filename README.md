@@ -10,8 +10,30 @@ Online judge system - https://judge.softuni.org/
 
 # Table of Contents:
 
+- Language Comparison
 - Basic Syntax, Conditional Statements and Loops
+- Git and GitHub
 - Data Types and Variables
+- HTTP Basics
+- Lists Basics
+- HTML & CSS Basics
+- Functions
+- Software Development Concepts - Part 1
+- Lists Advanced
+- Exam Preparation
+- Regular Mid Exam
+- Objects and Classes
+- Software Development Concepts - Part 2
+- Dictionaries
+- Bitwise Operations
+- Text Processing
+- Problem Solving
+- Regular Expressions
+- Database Basics
+- Exam Preparation
+- QA Introduction
+- Basic Web Project
+- Regular Final Exam
 
 
 # Additional resources
