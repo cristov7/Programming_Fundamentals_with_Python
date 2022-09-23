@@ -12,3 +12,9 @@ Online judge system - https://judge.softuni.org/
 
 - Basic Syntax, Conditional Statements and Loops
 - Data Types and Variables
+
+
+# Additional resources
+- Programming Fundamentals with Python
+
+https://softuni.bg/trainings/3840/programming-fundamentals-with-python-september-2022
