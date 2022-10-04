@@ -1,0 +1,8 @@
+stringList = input().split()
+numbersToRemove=int(input())
+numbersList = []
+for i in range(len(stringList)):
+    numbersList.append(int(stringList[i]))
+for j in range(numbersToRemove):
+    numbersList.remove(min(numbersList))
+print(*numbersList, sep=', ')
