@@ -1,5 +1,5 @@
-deck_of_cards_as_string = input()
-deck_of_cards_in_list = deck_of_cards_as_string.split()   # .split(" ")
+deck_of_cards_as_strings = input()
+deck_of_cards_in_list = deck_of_cards_as_strings.split()   # .split(" ")
 count_shuffles = int(input())
 for shuffle in range(1, count_shuffles + 1):
     final_deck = []
