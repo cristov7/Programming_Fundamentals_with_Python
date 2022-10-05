@@ -1,22 +1,23 @@
-easter_gifts = input().split()
+names_of_the_gifts_as_string = input()
+names_of_the_gifts_as_string_in_list = names_of_the_gifts_as_string.split()   # .split(" ")
 command = input()
 while command != "No Money":
-    input_gift_list = command.split()
-    if "OutOfStock" in input_gift_list:
-        for index, value in enumerate(easter_gifts):
-            if value == input_gift_list[1]:
-                easter_gifts[index] = "None"
-    elif "Required" in input_gift_list:
-        replacing_index = int(input_gift_list[2])
-        if replacing_index >= len(easter_gifts) or replacing_index < 0:
+    gift_list = command.split()
+    if "OutOfStock" in gift_list:
+        for index, value in enumerate(names_of_the_gifts_as_string_in_list):
+            if value == gift_list[1]:
+                names_of_the_gifts_as_string_in_list[index] = "None"
+    elif "Required" in gift_list:
+        replacing_index = int(gift_list[2])
+        if replacing_index >= len(names_of_the_gifts_as_string_in_list) or replacing_index < 0:
             command = input()
             continue
-        easter_gifts[replacing_index] = input_gift_list[1]
-    elif "JustInCase" in input_gift_list:
-        easter_gifts[-1] = input_gift_list[1]
+        names_of_the_gifts_as_string_in_list[replacing_index] = gift_list[1]
+    elif "JustInCase" in gift_list:
+        names_of_the_gifts_as_string_in_list[-1] = gift_list[1]
     command = input()
-while "None" in easter_gifts:
-    for index, value in enumerate(easter_gifts):
+while "None" in names_of_the_gifts_as_string_in_list:
+    for index, value in enumerate(names_of_the_gifts_as_string_in_list):
         if value == "None":
-            easter_gifts.remove(easter_gifts[index])
-print(*easter_gifts)
+            names_of_the_gifts_as_string_in_list.remove(names_of_the_gifts_as_string_in_list[index])
+print(*names_of_the_gifts_as_string_in_list)   # * = " ".join()
