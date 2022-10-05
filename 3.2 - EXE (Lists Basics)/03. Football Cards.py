@@ -38,7 +38,7 @@ else:
 #         game_was_stopped = True
 #         break
 # print(f"Team A - {len(team_A_players)}; Team B - {len(team_B_players)}")
-# if game_was_stopped:   # if game_was_stopped = True:
+# if game_was_stopped:   # if game_was_stopped == True:
 #     print("Game was terminated")
 
 
