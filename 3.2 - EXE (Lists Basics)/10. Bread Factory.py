@@ -30,7 +30,7 @@ for event in events:
             print(f"Closed! Cannot afford {type_of_event}.")
             factory_is_open = False
             break
-if factory_is_open:  # if factory_is_open == True
+if factory_is_open:  # if factory_is_open == True:
     print("Day completed!")
     print(f"Coins: {total_coins}")
     print(f"Energy: {total_energy}")

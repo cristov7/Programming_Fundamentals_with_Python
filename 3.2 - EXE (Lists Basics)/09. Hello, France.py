@@ -3,18 +3,18 @@ budget = float(input())
 oldPriceList = []
 newPriceList = []
 for item in itemsList:
-    current = item.split("->")
-    type = current[0]
-    price = float(current[1])
-    if "Clothes" in type and price <= 50:
+    current_item = item.split("->")
+    type_item = current_item[0]
+    price = float(current_item[1])
+    if "Clothes" in type_item and price <= 50:
         if budget - price >= 0:
             budget -= price
             oldPriceList.append(price)
-    elif "Shoes" in type and price <= 35:
+    elif "Shoes" in type_item and price <= 35:
         if budget - price >= 0:
             budget -= price
             oldPriceList.append(price)
-    elif "Accessories" in type and price <= 25.5:
+    elif "Accessories" in type_item and price <= 25.5:
         if budget - price >= 0:
             budget -= price
             oldPriceList.append(price)
