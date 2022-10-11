@@ -4,6 +4,8 @@ for result in range(boundary_number, divider_number - 1, -1):
     if result % divider_number == 0:
         print(result)
         break
+    else:
+        continue
 
 
 # import sys
