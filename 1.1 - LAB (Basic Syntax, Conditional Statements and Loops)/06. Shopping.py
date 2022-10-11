@@ -24,3 +24,18 @@ while True:
 #     command = input()
 # else:
 #     print("You bought everything needed.")
+
+
+# budget = int(input())
+# while True:
+#     command = input()
+#     if command == "End":
+#         print("You bought everything needed.")
+#         break
+#     else:
+#         price_per_product = int(command)
+#         if budget >= price_per_product:
+#             budget -= price_per_product
+#         else:
+#             print("You went in overdraft!")
+#             break
