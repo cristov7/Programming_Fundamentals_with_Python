@@ -9,3 +9,14 @@ elif 19 <= age <= 21:
 elif age >= 22:
     drink = "whisky"
 print(f"drink {drink}")
+
+
+# age = int(input())
+# if 0 <= age <= 14:
+#     print("drink toddy")
+# elif age <= 18:
+#     print("drink coke")
+# elif age <= 21:
+#     print("drink beer")
+# else:
+#     print("drink whisky")
