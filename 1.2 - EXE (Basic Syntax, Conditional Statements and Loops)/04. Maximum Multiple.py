@@ -16,4 +16,8 @@ for result in range(boundary_number, divider_number - 1, -1):
 #     if result % divider_number == 0:
 #         if result > max_result:
 #             max_result = result
+#         else:
+#             continue
+#     else:
+#         continue
 # print(max_result)
