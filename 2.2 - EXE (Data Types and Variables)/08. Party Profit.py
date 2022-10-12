@@ -18,3 +18,23 @@ for day in range(1, days + 1):
     earn_coins -= 2 * people_in_group
 average_coins_per_person = earn_coins // people_in_group
 print(f"{people_in_group} companions received {average_coins_per_person} coins each.")
+
+
+# count_people_in_group = int(input())
+# days = int(input())
+# earn_coins = 0
+# for day in range(1, days + 1):
+#     if day % 10 == 0:
+#         count_people_in_group -= 2
+#     if day % 15 == 0:
+#         count_people_in_group += 5
+#     earn_coins += 50
+#     earn_coins -= (2 * count_people_in_group)
+#     if day % 3 == 0:
+#         earn_coins -= (3 * count_people_in_group)
+#     if day % 5 == 0:
+#         earn_coins += (20 * count_people_in_group)
+#     if day % 3 == 0 and day % 5 == 0:
+#         earn_coins -= (2 * count_people_in_group)
+# coins_per_one_person = earn_coins // count_people_in_group
+# print(f"{count_people_in_group} companions received {coins_per_one_person} coins each.")
