@@ -1,35 +1,35 @@
-some_list = []
-printed_list = []
-number = int(input())
-for integer_numbers in range(1, number + 1):
-    current_int_number = int(input())
-    some_list.append(current_int_number)
+lst_numbers = list()
+count_number = int(input())
+for number in range(1, count_number + 1):
+    current_number = int(input())
+    lst_numbers.append(current_number)
 command = input()
-if command == "even":
-    for element in some_list:
+lst_update = []
+if command == "even":   # 0 се счита за положително и четно
+    for element in lst_numbers:
         if element % 2 == 0:
-            printed_list.append(element)
+            lst_update.append(element)
         else:
             continue
 elif command == "odd":
-    for element in some_list:
+    for element in lst_numbers:
         if element % 2 != 0:
-            printed_list.append(element)
+            lst_update.append(element)
         else:
             continue
 elif command == "negative":
-    for element in some_list:
+    for element in lst_numbers:
         if element < 0:
-            printed_list.append(element)
+            lst_update.append(element)
         else:
             continue
-elif command == "positive":
-    for element in some_list:
+elif command == "positive":   # 0 се счита за положително и четно
+    for element in lst_numbers:
         if element >= 0:
-            printed_list.append(element)
+            lst_update.append(element)
         else:
             continue
-print(printed_list)
+print(lst_update)
 
 
 # number = int(input())
