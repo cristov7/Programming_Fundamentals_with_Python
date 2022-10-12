@@ -36,3 +36,26 @@ print(f"Gladiator expenses: {expenses:.2f} aureus")
 # expenses_per_armours = count_armours * armour_price
 # total_expenses = expenses_per_helmets + expenses_per_swords + expenses_per_shields + expenses_per_armours
 # print(f"Gladiator expenses: {total_expenses:.2f} aureus")
+
+
+# count_failed_battles = int(input())
+# price_per_one_helmet = float(input())
+# price_per_one_sword = float(input())
+# price_per_one_shield = float(input())
+# price_per_one_armour = float(input())
+# expenses = 0
+# count_broken_shield = 0
+# for failed_battle in range(1, count_failed_battles + 1):
+#     if failed_battle % 2 == 0:
+#         expenses += price_per_one_helmet
+#     if failed_battle % 3 == 0:
+#         expenses += price_per_one_sword
+#     if failed_battle % 2 == 0 and failed_battle % 3 == 0:
+#         expenses += price_per_one_shield
+#         count_broken_shield += 1
+#         if count_broken_shield == 2:
+#             expenses += price_per_one_armour
+#             count_broken_shield = 0
+#         else:
+#             continue
+# print(f"Gladiator expenses: {expenses:.2f} aureus")
