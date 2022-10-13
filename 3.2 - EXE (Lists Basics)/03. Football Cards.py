@@ -23,7 +23,7 @@ for red_card in red_cards_in_list:
 if game_was_terminated:   # if game_was_terminated == True:
     print(f"Team A - {len(team_A_list)}; Team B - {len(team_B_list)}")
     print("Game was terminated")
-else:
+else:   # game_was_terminated == False:
     print(f"Team A - {len(team_A_list)}; Team B - {len(team_B_list)}")
 
 
