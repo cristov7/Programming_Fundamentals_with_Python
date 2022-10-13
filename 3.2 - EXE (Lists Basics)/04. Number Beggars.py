@@ -10,7 +10,7 @@ for beggar in range(count_beggars):
     index = beggar
     sum_per_beggar = 0
     for takes in range(len(numbers_as_integer_in_list)):
-        if index < len(numbers_as_string_in_list):
+        if index < len(numbers_as_integer_in_list):
             current_take = numbers_as_integer_in_list[index]
             sum_per_beggar += current_take
             index += count_beggars
