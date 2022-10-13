@@ -1,5 +1,5 @@
 numbers_as_string = input()
-numbers_as_string_in_list = numbers_as_string.split(" ")
+numbers_as_string_in_list = numbers_as_string.split(" ")   # .split()
 invert_values_list = []
 for element in numbers_as_string_in_list:
     current_element = int(element) * (-1)
