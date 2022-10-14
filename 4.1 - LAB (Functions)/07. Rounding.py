@@ -11,6 +11,15 @@ for number in numbers_as_float_in_list:
 print(round_numbers_as_float_in_list)
 
 
+# numbers_as_string_in_list = input().split(" ")   # .split()
+# round_numbers_in_list = []
+# for element in numbers_as_string_in_list:
+#     current_element = float(element)
+#     round_number = round(current_element)
+#     round_numbers_in_list.append(round_number)
+# print(round_numbers_in_list)
+
+
 # result = list(map(lambda x: round(float(x)), input().split(" ")))
 # print(result)
 
