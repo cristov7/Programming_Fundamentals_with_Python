@@ -11,6 +11,15 @@ for number in numbers_as_float_in_list:
 print(absolute_numbers_as_float_in_list)
 
 
+# numbers_as_string_in_list = input().split(" ")   # .split()
+# numbers_absolute_value_in_list = list()
+# for element in numbers_as_string_in_list:
+#     current_element = float(element)
+#     absolute_value = abs(current_element)
+#     numbers_absolute_value_in_list.append(absolute_value)
+# print(numbers_absolute_value_in_list)
+
+
 # numbers = input().split()
 # abs_numbers = []
 # for num in numbers:
