@@ -1,3 +1,22 @@
+input_grade = float(input())
+
+
+def grade_calculation(grade):
+    if 2.00 <= grade <= 2.99:
+        return "Fail"
+    elif 3.00 <= grade <= 3.49:
+        return "Poor"
+    elif 3.50 <= grade <= 4.49:
+        return "Good"
+    elif 4.50 <= grade <= 5.49:
+        return "Very Good"
+    elif 5.50 <= grade <= 6.00:
+        return "Excellent"
+
+
+print(grade_calculation(input_grade))
+
+
 # grade = float(input())
 #
 #
@@ -17,18 +36,18 @@
 # data_grades(grade)
 
 
-def data_grades(grade: float):
-    if 2.00 <= grade <= 2.99:
-        return "Fail"
-    elif 3.00 <= grade <= 3.49:
-        return "Poor"
-    elif 3.50 <= grade <= 4.49:
-        return "Good"
-    elif 4.50 <= grade <= 5.49:
-        return "Very Good"
-    elif 5.50 <= grade <= 6.00:
-        return "Excellent"
-
-
-input_grade = float(input())
-print(data_grades(input_grade))
+# def data_grades(grade: float):
+#     if 2.00 <= grade <= 2.99:
+#         return "Fail"
+#     elif 3.00 <= grade <= 3.49:
+#         return "Poor"
+#     elif 3.50 <= grade <= 4.49:
+#         return "Good"
+#     elif 4.50 <= grade <= 5.49:
+#         return "Very Good"
+#     elif 5.50 <= grade <= 6.00:
+#         return "Excellent"
+# 
+# 
+# input_grade = float(input())
+# print(data_grades(input_grade))
