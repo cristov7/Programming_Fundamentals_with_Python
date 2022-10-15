@@ -6,7 +6,7 @@ def absolute_value(number):
     absolute_value_list.append(current_number)
 
 
-numbers_as_string_in_list = input().split(" ")
+numbers_as_string_in_list = input().split(" ")   # .split()
 for element in numbers_as_string_in_list:
     current_element = float(element)
     absolute_value(current_element)
