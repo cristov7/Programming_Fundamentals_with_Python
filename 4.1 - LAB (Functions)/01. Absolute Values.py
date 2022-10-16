@@ -1,4 +1,7 @@
-def absolute_value(number):
+absolute_value_list = []
+
+
+def absolute_value(number: float):
     current_number = abs(number)
     absolute_value_list.append(current_number)
 
@@ -9,7 +12,6 @@ for element in numbers_as_string_in_list:
     absolute_value(current_element)
 
 
-absolute_value_list = []
 print(absolute_value_list)
 
 
