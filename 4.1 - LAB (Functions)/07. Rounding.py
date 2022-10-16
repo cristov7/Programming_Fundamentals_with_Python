@@ -1,7 +1,7 @@
 round_number_list = list()
 
 
-def round_numbers(number):
+def round_numbers(number: float):
     round_number_list.append(round(number))
 
 
