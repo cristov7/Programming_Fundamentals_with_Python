@@ -41,10 +41,6 @@ print(f"{calculation_order(type_product, quantity_of_the_product):.2f}")
 # print(f'{final_price:.2f}')
 
 
-# product = input()
-# quantity = int(input())
-# 
-# 
 # def calculating(input_product, quantity_of_products):
 #     if input_product == 'coffee':
 #         price_per_product = 1.5
@@ -58,7 +54,9 @@ print(f"{calculation_order(type_product, quantity_of_the_product):.2f}")
 #     elif input_product == 'snacks':
 #         price_per_product = 2
 #         return quantity_of_products * price_per_product
-# 
-# 
+#
+#
+# product = input()
+# quantity = int(input())
 # final_price = calculating(product, quantity)
 # print(f'{final_price:.2f}')
