@@ -1,4 +1,4 @@
-def calculation(choice, number_1, number_2):
+def calculation(choice: str, number_1: int, number_2: int):
     if choice == "multiply":
         return number_1 * number_2
     elif choice == "divide":
