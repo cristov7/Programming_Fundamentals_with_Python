@@ -1,11 +1,9 @@
-input_string = input()
-counter = int(input())
-
-
 def repeat_string_function(variable_string, count_repeat):
     return variable_string * count_repeat
 
 
+input_string = input()
+counter = int(input())
 print(repeat_string_function(input_string, counter))
 
 
@@ -16,14 +14,12 @@ print(repeat_string_function(input_string, counter))
 # print(result)
 
 
-# string_text = input()
-# counter = int(input())
-#
-#
 # def repeat_string_text(string_text, counter):
 #     return string_text * counter
 #
 #
+# string_text = input()
+# counter = int(input())
 # print(repeat_string_text(string_text, counter))
 
 
