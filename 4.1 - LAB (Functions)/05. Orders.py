@@ -1,4 +1,4 @@
-def calculation_order(product, count):
+def calculation_order(product: str, count: int):
     if product == "coffee":
         price_product = 1.50
         return price_product * count
