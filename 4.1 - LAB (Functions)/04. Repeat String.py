@@ -1,4 +1,4 @@
-def repeat_string_function(variable_string, count_repeat):
+def repeat_string_function(variable_string: str, count_repeat: int):
     return variable_string * count_repeat
 
 
