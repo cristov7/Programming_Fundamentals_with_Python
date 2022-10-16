@@ -1,4 +1,4 @@
-def collect_characters(first, second):
+def collect_characters(first: str, second: str):
     characters = []
     for current_character in range(ord(first) + 1, ord(second)):
         characters.append(chr(current_character))
