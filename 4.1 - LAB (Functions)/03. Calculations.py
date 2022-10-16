@@ -1,8 +1,3 @@
-operator = input()
-first_number = int(input())
-second_number = int(input())
-
-
 def calculation(choice, number_1, number_2):
     if choice == "multiply":
         return number_1 * number_2
@@ -14,14 +9,12 @@ def calculation(choice, number_1, number_2):
         return number_1 - number_2
 
 
+operator = input()
+first_number = int(input())
+second_number = int(input())
 print(calculation(operator, first_number, second_number))
 
 
-# operator = input()
-# first_number = int(input())
-# second_number = int(input())
-#
-#
 # def result(operator, first_number, second_number):
 #     if operator == "multiply":
 #         return first_number * second_number
@@ -33,6 +26,9 @@ print(calculation(operator, first_number, second_number))
 #         return first_number - second_number
 #
 #
+# operator = input()
+# first_number = int(input())
+# second_number = int(input())
 # print(result(operator, first_number, second_number))
 
 
@@ -47,8 +43,8 @@ print(calculation(operator, first_number, second_number))
 #     elif operator == "subtract":
 #         result = first_number - second_number
 #     print(result)
-# 
-# 
+#
+#
 # input_operator = input()
 # input_first_number = int(input())
 # input_second_number = int(input())
