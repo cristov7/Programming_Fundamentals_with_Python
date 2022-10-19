@@ -1,4 +1,4 @@
-def is_perfect(some_number):
+def is_perfect(some_number: int):
     sum_divisors = 0
     for divisor in range(1, some_number):
         if some_number % divisor == 0:

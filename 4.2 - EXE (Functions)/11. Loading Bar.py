@@ -2,9 +2,9 @@ def loading_bar(number: int):
     percent = number
     count_percents = percent // 10
     count_points = 10 - count_percents
-    add_percent = count_percents * "%"
+    add_percents = count_percents * "%"
     add_points = count_points * "."
-    combination = add_percent + add_points
+    combination = add_percents + add_points
     if percent == 100:
         return f"{percent}% Complete!\n[{combination}]"
     else:
