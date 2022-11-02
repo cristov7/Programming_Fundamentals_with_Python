@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Lists</title>   <!-- (<title> = title name = </title>) -->
+    </head>
+    <body>
+        <ol>   <!-- (<ol> = ordered list = </ol>) -->
+            <li>List item 1   <!-- (<li> = FIRST list / element) -->
+                <ol>   <!-- (<ol> = NESTED ordered list = </ol>) -->
+                    <li>Nested item 1.1</li>   <!-- (<li> = FIRST NESTED list / element) -->
+                    <li>Nested item 1.2</li>   <!-- (<li> = SECOND NESTED list / element) -->
+                </ol>
+            </li>
+            <li>List item 2   <!-- (<li> = SECOND list / element) -->
+                <ol>   <!-- (<ol> = NESTED ordered list = </ol>) -->
+                    <li>Nested item 2.1</li>   <!-- (<li> = FIRST NESTED list / element) -->
+                    <li>Nested item 2.2   <!-- (<li> = SECOND NESTED list / element) -->
+                        <ul type="square">   <!-- (<ul> = unordered list & type="indicator") -->
+                            <li>Nested item 2.2.1</li>   <!-- (<li> = FIRST NESTED NESTED list / element) -->
+                            <li>Nested item 2.2.2</li>   <!-- (<li> = SECOND NESTED NESTED list / element) -->
+                            <li>Nested item 2.2.3</li>   <!-- (<li> = THIRD NESTED NESTED list / element) -->
+                        </ul>
+                    </li>
+                    <li>Nested item 2.3</li>   <!-- (<li> = THIRD NESTED list / element) -->
+                </ol>
+            </li>
+            <li>List item 3   <!-- (<li> = THIRD list / element) -->
+                <ul type="circle">   <!-- (<ul> = unordered list & type="indicator") -->
+                    <li>Nested item 3.1</li>   <!-- (<li> = FIRST NESTED list / element) -->
+                    <li>Nested item 3.2</li>   <!-- (<li> = SECOND NESTED list / element) -->
+                    <li>Nested item 3.3</li>   <!-- (<li> = THIRD NESTED list / element) -->
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>
