@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+
+
+p {
+    font-family: Helvetica;
+    font-size: 23px;
+}
+
+
+a {
+    color: green;
+    font-size: 23px;
+}
+
+
+h1.brownBear {
+    text-align: left;
+    color: brown;
+}
+
+
+#blue {
+    color : blue;
+}
+
+
+h1.brownBear {
+    background-color: yellow
+}
+
+
+h1.brownBear {display: inline-block;}

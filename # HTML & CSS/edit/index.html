@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<!-- (comment e.g. -> #) -->
+
+<html>   <!-- (open tag) -->
+
+    <head>   <!-- (first component e.g. -> start paragraph - head) -->
+        <meta charset="UTF-8">   <!-- -->
+        <meta name="description" content="This is my first web page">   <!-- (description = This is my first web page) -->
+        <meta name="author" content="Kristian Hristov">   <!-- (author = Kristian Hristov) -->
+        <meta name="keyword" content="HTML, CSS, Python">   <!-- (keywords = HTML, CSS, Python) -->
+        <title>HTML Example</title>   <!-- (title / head e.g. -> start and close paragraph) -->
+
+        <!-- (internal style sheet -> css) -->
+        <style>
+            .green {
+            color: green;
+            }
+        </style>
+
+        <!-- (combining HTML and CSS files (external style) -> html file + css file) -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </head>   <!-- (first component e.g. -> close paragraph - head) -->
+
+    <body>   <!-- (second component e.g. -> start paragraph - body) -->
+
+        <h1>Hello HTML!</h1>   <!-- (body e.g. -> start and close paragraph) -->
+
+        <!-- (web page structure e.g. -> elements) -->
+        <!-- (<b> = bold = </b>) -->
+        <!-- (<strong> = bold = </strong>) -->
+        <!-- (id="ID name" e.g. #ID name {options} -> html file + css file) -->
+        <p id="blue">I am learning <b>HTML</b> and <strong>CSS!</strong></p>   <!-- (<p> = paragraph =</p>) -->
+
+            <!-- (<img src="name_of_the_image> = the image must be extracted in the same project e.g. -> banana.png) -->
+            <!-- (alt="alternative name" e.g. -> banana) -->
+            <!-- (height="pixels" e.g. -> 75) -->
+            <!-- (width="pixels" e.g. -> 75) -->
+            <img src="images/banana.png" alt="banana" height="75" width="75">
+            <img src="images/orange.png" alt="orange" height="75" width="75">
+            <img src="images/kiwi.png" alt="kiwi" height="75" width="75">
+            <img src="images/kiwi.png" alt="kiwi" height="75" width="75">
+            <img src="images/apple.png" alt="apple" height="75" width="75">
+
+            <br>   <!-- (<br> = new line e.g. -> print() or \n) -->
+
+            <!-- (class="ID name" e.g. h1.ID name {options} -> html file + css file) -->
+            <h1 class="brownBear">The Brown Bear</h1>   <!-- (<h1> = heading = </h1> e.g. -> The biggest) -->
+
+            <br>   <!-- (<br> = new line e.g. -> print() or \n) -->
+
+            <img src="images/bear.jpg" alt="bear" height="175" width="175">   <!-- (<img src="name">, alt="alt name", height="px", width="px") -->
+
+            <br>   <!-- (<br> = new line e.g. -> print() or \n) -->
+
+            <!-- (create some URLs on e.g. -> Click here!) -->
+            <a href="https://en.wikipedia.org/wiki/Brown_bear">Click here!</a>
+
+            <!-- (<ol> = ordered list = </ol>) -->
+            <ol>
+                <!-- (<li> = list = </li>) -->
+                <!-- (inline ccs style -> style="color : e.g. purple) -->
+                <li style="color : yellow">One</li>
+                <li style="color : red">Two</li>
+                <li style="color : blue">Three</li>
+            </ol>
+
+            <!-- (<ol> = ordered list = </ol>) -->
+            <ol type="A">   <!-- (type="indicator") -->
+                <!-- (<li> = list = </li>) -->
+
+                <!-- (class="green" = internal style sheet -> <head>) -->
+                <li class="green">One</li>
+                <li class="green">Two</li>
+                <li class="green">Three</li>
+            </ol>
+
+            <!-- (<ul> = unordered list = </ul>) -->
+            <ul>
+                <!-- (<li> = list = </li>) -->
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ul>
+
+            <!-- (<ul> = unordered list = </ul>) -->
+            <ul type="square">   <!-- (type="indicator") -->
+                <!-- (<li> = list = </li>) -->
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ul>
+
+    </body>   <!-- (second component e.g. -> close paragraph - body) -->
+
+</html>   <!-- close tag  -->
