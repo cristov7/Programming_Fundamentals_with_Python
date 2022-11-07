@@ -34,6 +34,8 @@ Online judge system - https://judge.softuni.org/
 - QA Introduction
 - Basic Web Project
 - Regular Final Exam
+- Retake Mid Exam
+- Retake Final Exam
 
 
 # Additional resources
