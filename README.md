@@ -20,7 +20,7 @@ Online judge system - https://judge.softuni.org/
 - Functions
 - Software Development Concepts - Part 1
 - Lists Advanced
-- Exam Preparation
+- Mid Exam Preparation
 - Regular Mid Exam
 - Objects and Classes
 - Software Development Concepts - Part 2
@@ -30,7 +30,7 @@ Online judge system - https://judge.softuni.org/
 - Problem Solving
 - Regular Expressions
 - Database Basics
-- Exam Preparation
+- Final Exam Preparation
 - QA Introduction
 - Basic Web Project
 - Regular Final Exam
