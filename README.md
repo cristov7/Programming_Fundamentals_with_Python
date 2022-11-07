@@ -30,7 +30,8 @@ Online judge system - https://judge.softuni.org/
 - Problem Solving
 - Regular Expressions
 - Database Basics
-- Final Exam Preparation
+- Final Exam Preparation - Part 1
+- Final Exam Preparation - Part 2
 - QA Introduction
 - Basic Web Project
 - Regular Final Exam
