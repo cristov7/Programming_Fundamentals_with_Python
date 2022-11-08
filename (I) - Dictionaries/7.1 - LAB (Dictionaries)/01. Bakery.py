@@ -1,10 +1,23 @@
-items = input().split()
+food_and_quantity = input().split()
 bakery = {}
-for index in range(0, len(items), 2):   # for index in range(0, len(items) - 1, 2):
-    key = items[index]
-    value = int(items[index + 1])
-    bakery[key] = value
+food = ""
+quantity = None
+for item in food_and_quantity:
+    if item.isalpha():
+        food = item
+    else:
+        quantity = item
+        bakery[food] = int(quantity)
 print(bakery)
+
+
+# items = input().split()
+# bakery = {}
+# for index in range(0, len(items), 2):   # for index in range(0, len(items) - 1, 2):
+#     key = items[index]
+#     value = int(items[index + 1])
+#     bakery[key] = value
+# print(bakery)
 
 
 # items = input().split()
