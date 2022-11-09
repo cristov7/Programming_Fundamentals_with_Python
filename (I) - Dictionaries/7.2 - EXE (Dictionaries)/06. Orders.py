@@ -1,22 +1,44 @@
 orders = {}
 while True:
-    command = input()
-    if command == "buy":
+    info = input()
+    if info == "buy":
+        for product_name, other_info in orders.items():
+            total_price = other_info['price'] * other_info['quantity']
+            print(f"{product_name} -> {total_price:.2f}")
         break
     else:
-        # name, price, quantity = command.split()
-        info_list = command.split()
+        info_list = info.split()
         name = info_list[0]
         price = float(info_list[1])
         quantity = int(info_list[2])
-        if name not in orders.keys():   # if name not in orders:
-            orders[name] = [price, quantity]
+        if name not in orders:
+            orders[name] = {}
+            orders[name]['price'] = price
+            orders[name]['quantity'] = quantity
         else:
-            orders[name][0] = price
-            orders[name][1] += quantity
-for product_name, price_and_quantity in orders.items():
-    total_price = price_and_quantity[0] * price_and_quantity[1]
-    print(f"{product_name} -> {total_price:.2f}")
+            orders[name]['price'] = price
+            orders[name]['quantity'] += quantity
+
+
+# orders = {}
+# while True:
+#     command = input()
+#     if command == "buy":
+#         break
+#     else:
+#         # name, price, quantity = command.split()
+#         info_list = command.split()
+#         name = info_list[0]
+#         price = float(info_list[1])
+#         quantity = int(info_list[2])
+#         if name not in orders.keys():   # if name not in orders:
+#             orders[name] = [price, quantity]
+#         else:
+#             orders[name][0] = price
+#             orders[name][1] += quantity
+# for product_name, price_and_quantity in orders.items():
+#     total_price = price_and_quantity[0] * price_and_quantity[1]
+#     print(f"{product_name} -> {total_price:.2f}")
 
 
 # orders_dict = {}
