@@ -2,31 +2,51 @@ courses = {}
 while True:
     command = input()
     if command == "end":
+        for course_name, registered_student in courses.items():
+            count_students = len(registered_student)
+            print(f"{course_name}: {count_students}")
+            for index in range(count_students):
+                student_name = registered_student[index]
+                print(f"-- {student_name}")
         break
     else:
-        info_list = command.split(" : ")
-        course = info_list[0]
-        name = info_list[1]
-        if course not in courses:
-            courses[course] = [name]
+        command_list = command.split(" : ")
+        course_name = command_list[0]
+        student_name = command_list[1]
+        if course_name not in courses:
+            courses[course_name] = [student_name]
         else:
-            courses[course].append(name)
-for course, name in courses.items():
-    registered_students = len(name)
-    print(f"{course}: {registered_students}")
-    for student in range(registered_students):
-        student_name = name[student]
-        print(f"-- {student_name}")
+            courses[course_name].append(student_name)
 
 
-# from collections import defaultdict
-# course_dict = defaultdict(list)
-# while True:
-#     command = input()
-#     if command == 'end':
-#         break
-#     course_name, student_name = command.split(' : ')
-#     course_dict[course_name].append(student_name)
-# for course, students in course_dict.items():
-#     print(f"{course}: {len(students)}")
-#     print('\n'.join(f"-- {name}" for name in students))
+# diary = {}
+# number = int(input())
+# for student in range(1, number + 1):
+#     name = input()
+#     grade = float(input())
+#     if name not in diary.keys():   # if name not in diary:
+#         diary[name] = [grade]
+#     else:
+#         diary[name].append(grade)
+# for name, grades in diary.items():
+#     count_grades = len(grades)
+#     average_grade = sum(grades) / count_grades
+#     if average_grade >= 4.50:
+#         print(f"{name} -> {average_grade:.2f}")
+#     else:
+#         continue
+
+
+# number_of_students = int(input())
+# academy = {}
+# for student in range(number_of_students):
+#     name = input()
+#     grade = float(input())
+#     if name not in academy.keys():
+#         academy[name] = []
+#     academy[name].append(grade)
+#
+# for student_name, grades in academy.items():
+#     average_grade = sum(grades) / len(grades)
+#     if average_grade >= 4.50:
+#         print(f"{student_name} -> {average_grade:.2f}")
