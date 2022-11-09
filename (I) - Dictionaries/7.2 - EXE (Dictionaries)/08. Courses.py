@@ -19,34 +19,35 @@ while True:
             courses[course_name].append(student_name)
 
 
-# diary = {}
-# number = int(input())
-# for student in range(1, number + 1):
-#     name = input()
-#     grade = float(input())
-#     if name not in diary.keys():   # if name not in diary:
-#         diary[name] = [grade]
+# courses = {}
+# while True:
+#     command = input()
+#     if command == "end":
+#         break
 #     else:
-#         diary[name].append(grade)
-# for name, grades in diary.items():
-#     count_grades = len(grades)
-#     average_grade = sum(grades) / count_grades
-#     if average_grade >= 4.50:
-#         print(f"{name} -> {average_grade:.2f}")
-#     else:
-#         continue
+#         info_list = command.split(" : ")
+#         course = info_list[0]
+#         name = info_list[1]
+#         if course not in courses:
+#             courses[course] = [name]
+#         else:
+#             courses[course].append(name)
+# for course, name in courses.items():
+#     registered_students = len(name)
+#     print(f"{course}: {registered_students}")
+#     for student in range(registered_students):
+#         student_name = name[student]
+#         print(f"-- {student_name}")
 
 
-# number_of_students = int(input())
-# academy = {}
-# for student in range(number_of_students):
-#     name = input()
-#     grade = float(input())
-#     if name not in academy.keys():
-#         academy[name] = []
-#     academy[name].append(grade)
-#
-# for student_name, grades in academy.items():
-#     average_grade = sum(grades) / len(grades)
-#     if average_grade >= 4.50:
-#         print(f"{student_name} -> {average_grade:.2f}")
+# from collections import defaultdict
+# course_dict = defaultdict(list)
+# while True:
+#     command = input()
+#     if command == 'end':
+#         break
+#     course_name, student_name = command.split(' : ')
+#     course_dict[course_name].append(student_name)
+# for course, students in course_dict.items():
+#     print(f"{course}: {len(students)}")
+#     print('\n'.join(f"-- {name}" for name in students))
