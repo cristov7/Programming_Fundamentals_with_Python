@@ -43,7 +43,6 @@ for student, grades in students_and_grades.items():
 #     if name not in academy.keys():
 #         academy[name] = []
 #     academy[name].append(grade)
-#
 # for student_name, grades in academy.items():
 #     average_grade = sum(grades) / len(grades)
 #     if average_grade >= 4.50:
