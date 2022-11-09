@@ -1,19 +1,38 @@
-diary = {}
+students_and_grades = {}
 number = int(input())
 for student in range(1, number + 1):
     name = input()
     grade = float(input())
-    if name not in diary.keys():   # if name not in diary:
-        diary[name] = [grade]
+    if name not in students_and_grades:
+        students_and_grades[name] = [grade]
     else:
-        diary[name].append(grade)
-for name, grades in diary.items():
+        students_and_grades[name].append(grade)
+for student, grades in students_and_grades.items():
     count_grades = len(grades)
-    average_grade = sum(grades) / count_grades
+    sum_grades = sum(grades)
+    average_grade = sum_grades / count_grades
     if average_grade >= 4.50:
-        print(f"{name} -> {average_grade:.2f}")
+        print(f"{student} -> {average_grade:.2f}")
     else:
         continue
+
+
+# diary = {}
+# number = int(input())
+# for student in range(1, number + 1):
+#     name = input()
+#     grade = float(input())
+#     if name not in diary.keys():   # if name not in diary:
+#         diary[name] = [grade]
+#     else:
+#         diary[name].append(grade)
+# for name, grades in diary.items():
+#     count_grades = len(grades)
+#     average_grade = sum(grades) / count_grades
+#     if average_grade >= 4.50:
+#         print(f"{name} -> {average_grade:.2f}")
+#     else:
+#         continue
 
 
 # number_of_students = int(input())
