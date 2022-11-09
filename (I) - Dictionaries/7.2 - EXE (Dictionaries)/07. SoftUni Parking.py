@@ -1,25 +1,49 @@
 parking = {}
-count_command = int(input())
-for command in range(1, count_command + 1):
-    info = input().split()
-    registration = info[0]
-    if registration == "register":
-        username = info[1]
-        license_plate_number = info[2]
-        if username not in parking.keys():  # if username not in parking:
+count_commands = int(input())
+for command in range(1, count_commands + 1):
+    info_list = input().split()
+    main_command = info_list[0]
+    if main_command == "register":
+        username = info_list[1]
+        license_plate_number = info_list[2]
+        if username not in parking:
             parking[username] = license_plate_number
             print(f"{username} registered {license_plate_number} successfully")
         else:
             print(f"ERROR: already registered with plate number {license_plate_number}")
-    else:   # elif registration == "unregister":
-        username = info[1]
-        if username in parking.keys():   # if username not in parking:
+    else:   # main_command == "unregister":
+        username = info_list[1]
+        if username not in parking:
+            print(f"ERROR: user {username} not found")
+        else:
             del parking[username]
             print(f"{username} unregistered successfully")
-        else:
-            print(f"ERROR: user {username} not found")
 for username, license_plate_number in parking.items():
     print(f"{username} => {license_plate_number}")
+
+
+# parking = {}
+# count_command = int(input())
+# for command in range(1, count_command + 1):
+#     info = input().split()
+#     registration = info[0]
+#     if registration == "register":
+#         username = info[1]
+#         license_plate_number = info[2]
+#         if username not in parking.keys():  # if username not in parking:
+#             parking[username] = license_plate_number
+#             print(f"{username} registered {license_plate_number} successfully")
+#         else:
+#             print(f"ERROR: already registered with plate number {license_plate_number}")
+#     else:   # elif registration == "unregister":
+#         username = info[1]
+#         if username in parking.keys():   # if username not in parking:
+#             del parking[username]
+#             print(f"{username} unregistered successfully")
+#         else:
+#             print(f"ERROR: user {username} not found")
+# for username, license_plate_number in parking.items():
+#     print(f"{username} => {license_plate_number}")
 
 
 # parking = {}
