@@ -15,7 +15,7 @@ for number_as_string in numbers_as_string_in_list:
         index_per_message.append(sum_number)
 counter = 0
 for index, value in enumerate(index_per_message):
-    if value + counter > length_of_message_as_string:
+    if value + counter >= length_of_message_as_string:
         result = value + counter - length_of_message_as_string
         current_symbol = message_as_string[result]
         print(current_symbol, end="")
