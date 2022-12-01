@@ -5,9 +5,9 @@ while True:
     if command == "":
         break
     else:
-        command_list = re.search(regex, command)
-        if command_list:
-            sub_domain, domain_name, domain_extension = command_list.groups()
+        info = re.search(regex, command)
+        if info:
+            sub_domain, domain_name, domain_extension = info.groups()
             # sub_domain = command_list.group(1)
             # domain_name = command_list.group(2)
             # domain_extension = command_list.group(3)
