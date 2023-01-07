@@ -1,10 +1,19 @@
-input_string = input().lower()
-counter_sand = input_string.count("sand")
-counter_water = input_string.count("water")
-counter_fish = input_string.count("fish")
-counter_sun = input_string.count("sun")
-how_many_times = counter_sand + counter_water + counter_fish + counter_sun
-print(how_many_times)
+single_string = input().lower()
+beach_list = ["sand", "water", "fish", "sun"]
+total = 0
+for element in beach_list:
+    result = single_string.count(element)
+    total += result
+print(total)
+
+
+# input_string = input().lower()
+# counter_sand = input_string.count("sand")
+# counter_water = input_string.count("water")
+# counter_fish = input_string.count("fish")
+# counter_sun = input_string.count("sun")
+# how_many_times = counter_sand + counter_water + counter_fish + counter_sun
+# print(how_many_times)
 
 
 # input_string = input().lower()
