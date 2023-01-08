@@ -24,8 +24,6 @@ def calculating_function(some_type: str, some_string: str):
     elif some_type == "string":
         formatting_string = "$" + some_string + "$"
         return formatting_string
-    else:
-        raise SystemExit("Invalid calculation...")
 
 
 current_type = input()
@@ -47,8 +45,8 @@ print(calculation)
 #     elif variable == "string":
 #         text = input()
 #         return f"${text}$"
-
-
+#
+#
 # enter_type = input()
 # print(type_function(enter_type))
 
