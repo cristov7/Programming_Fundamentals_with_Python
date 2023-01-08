@@ -1,22 +1,45 @@
 def multiplication_function(some_list: list):
-    result = 0
+    calculation = 0
     for index, number in enumerate(some_list):
         if index == 0:
-            result = number
+            calculation = number
         else:
-            multiply = result * number
-            result = multiply
-    if result > 0:
-        return "positive"
-    elif result < 0:
-        return "negative"
+            multiply = calculation * number
+            calculation = multiply
+    result = ""
+    if calculation > 0:
+        result = "positive"
+    elif calculation < 0:
+        result = "negative"
     else:
-        return "zero"
+        result = "zero"
+    return result
 
 
 numbers_list = [int(input()) for number in range(3)]
-calculation = multiplication_function(numbers_list)
-print(calculation)
+answer = multiplication_function(numbers_list)
+print(answer)
+
+
+# def multiplication_function(some_list: list):
+#     result = 0
+#     for index, number in enumerate(some_list):
+#         if index == 0:
+#             result = number
+#         else:
+#             multiply = result * number
+#             result = multiply
+#     if result > 0:
+#         return "positive"
+#     elif result < 0:
+#         return "negative"
+#     else:
+#         return "zero"
+#
+#
+# numbers_list = [int(input()) for number in range(3)]
+# calculation = multiplication_function(numbers_list)
+# print(calculation)
 
 
 # def multiplication_sign(number_1: int, number_2: int, number_3: int):
