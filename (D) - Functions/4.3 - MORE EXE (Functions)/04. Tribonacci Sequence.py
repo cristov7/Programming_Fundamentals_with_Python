@@ -1,28 +1,50 @@
-def tribonacci_sequence(number: int):
+def tribonacci_calculation_function(some_number: int):
     tribonacci_list = []
-    for tribonacci in range(1, number + 1):
-        if tribonacci == 1:
-            current_tribonacci = 1
-            tribonacci_list.append(str(current_tribonacci))
-        elif tribonacci == 2:
-            current_tribonacci = int(tribonacci_list[-1])
-            tribonacci_list.append(str(current_tribonacci))
-        elif tribonacci == 3:
-            before_1_tribonacci = int(tribonacci_list[-1])
-            before_2_tribonacci = int(tribonacci_list[-2])
-            current_tribonacci = before_1_tribonacci + before_2_tribonacci
-            tribonacci_list.append(str(current_tribonacci))
+    for position in range(1, some_number + 1):
+        if len(tribonacci_list) < 3:
+            number = sum(tribonacci_list)
+            if number == 0:
+                number = 1
+                tribonacci_list.append(number)
+            else:
+                tribonacci_list.append(number)
         else:
-            before_1_tribonacci = int(tribonacci_list[-1])
-            before_2_tribonacci = int(tribonacci_list[-2])
-            before_3_tribonacci = int(tribonacci_list[-3])
-            current_tribonacci = before_1_tribonacci + before_2_tribonacci + before_3_tribonacci
-            tribonacci_list.append(str(current_tribonacci))
-    return (" ".join(tribonacci_list))
+            last_3_numbers_list = [tribonacci_list[-1], tribonacci_list[-2], tribonacci_list[-3]]
+            number = sum(last_3_numbers_list)
+            tribonacci_list.append(number)
+    return tribonacci_list
 
 
-enter_number = int(input())
-print(tribonacci_sequence(enter_number))
+start_number = int(input())
+numbers_list = tribonacci_calculation_function(start_number)
+print(*numbers_list)
+
+
+# def tribonacci_sequence(number: int):
+#     tribonacci_list = []
+#     for tribonacci in range(1, number + 1):
+#         if tribonacci == 1:
+#             current_tribonacci = 1
+#             tribonacci_list.append(str(current_tribonacci))
+#         elif tribonacci == 2:
+#             current_tribonacci = int(tribonacci_list[-1])
+#             tribonacci_list.append(str(current_tribonacci))
+#         elif tribonacci == 3:
+#             before_1_tribonacci = int(tribonacci_list[-1])
+#             before_2_tribonacci = int(tribonacci_list[-2])
+#             current_tribonacci = before_1_tribonacci + before_2_tribonacci
+#             tribonacci_list.append(str(current_tribonacci))
+#         else:
+#             before_1_tribonacci = int(tribonacci_list[-1])
+#             before_2_tribonacci = int(tribonacci_list[-2])
+#             before_3_tribonacci = int(tribonacci_list[-3])
+#             current_tribonacci = before_1_tribonacci + before_2_tribonacci + before_3_tribonacci
+#             tribonacci_list.append(str(current_tribonacci))
+#     return (" ".join(tribonacci_list))
+
+
+# enter_number = int(input())
+# print(tribonacci_sequence(enter_number))
 
 
 # def find_tribonacci(number):
