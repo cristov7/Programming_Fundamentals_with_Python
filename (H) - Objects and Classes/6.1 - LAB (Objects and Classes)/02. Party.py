@@ -7,8 +7,8 @@ party = Party()
 while True:
     command = input()
     if command == "End":
-        print(f'Going: {", ".join(party.people)}')
-        print(f'Total: {len(party.people)}')
+        print(f"Going: {', '.join(party.people)}"
+              f"\nTotal: {len(party.people)}")
         break
     else:
         name = command

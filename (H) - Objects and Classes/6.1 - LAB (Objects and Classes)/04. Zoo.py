@@ -1,45 +1,88 @@
 class Zoo:
     __animals = 0
 
-    def __init__(self, name):
+    def __init__(self, name: str):
         self.name = name
         self.mammals = []
         self.fishes = []
         self.birds = []
 
-    def add_animal(self, species, name):
+    def add_animal(self, species: str, name: str) -> None:
         if species == "mammal":
             self.mammals.append(name)
+            Zoo.__animals += 1
         elif species == "fish":
             self.fishes.append(name)
+            Zoo.__animals += 1
         elif species == "bird":
             self.birds.append(name)
+            Zoo.__animals += 1
+        else:
+            raise SystemExit("Invalid species!")
 
-        Zoo.__animals += 1
-
-    def get_info(self, species):
-        result = ""
+    def get_info(self, species: str) -> str:
         if species == "mammal":
-            result += f"Mammals in {self.name}: {', '.join(self.mammals)}\n"
+            return f"Mammals in {self.name}: {', '.join(self.mammals)}" \
+                   f"\nTotal animals: {Zoo.__animals}"
         elif species == "fish":
-            result += f"Fishes in {self.name}: {', '.join(self.fishes)}\n"
+            return f"Fishes in {self.name}: {', '.join(self.fishes)}" \
+                   f"\nTotal animals: {Zoo.__animals}"
         elif species == "bird":
-            result += f"Birds in {self.name}: {', '.join(self.birds)}\n"
+            return f"Birds in {self.name}: {', '.join(self.birds)}" \
+                   f"\nTotal animals: {Zoo.__animals}"
+        else:
+            raise SystemExit("Invalid species!")
 
-        result += f"Total animals: {Zoo.__animals}"
-        return result
+
+zoo = Zoo(input())
+for animal in range(1, int(input()) + 1):
+    animal_species, animal_name = input().split()
+    zoo.add_animal(animal_species, animal_name)
+print(zoo.get_info(input()))
 
 
-zoo_name = input()
-zoo = Zoo(zoo_name)
-count = int(input())
-for i in range(count):
-    animal = input().split()
-    species = animal[0]
-    name = animal[1]
-    zoo.add_animal(species, name)
-info = input()
-print(zoo.get_info(info))
+# class Zoo:
+#     __animals = 0
+#
+#     def __init__(self, name):
+#         self.name = name
+#         self.mammals = []
+#         self.fishes = []
+#         self.birds = []
+#
+#     def add_animal(self, species, name):
+#         if species == "mammal":
+#             self.mammals.append(name)
+#         elif species == "fish":
+#             self.fishes.append(name)
+#         elif species == "bird":
+#             self.birds.append(name)
+#
+#         Zoo.__animals += 1
+#
+#     def get_info(self, species):
+#         result = ""
+#         if species == "mammal":
+#             result += f"Mammals in {self.name}: {', '.join(self.mammals)}\n"
+#         elif species == "fish":
+#             result += f"Fishes in {self.name}: {', '.join(self.fishes)}\n"
+#         elif species == "bird":
+#             result += f"Birds in {self.name}: {', '.join(self.birds)}\n"
+#
+#         result += f"Total animals: {Zoo.__animals}"
+#         return result
+#
+#
+# zoo_name = input()
+# zoo = Zoo(zoo_name)
+# count = int(input())
+# for i in range(count):
+#     animal = input().split()
+#     species = animal[0]
+#     name = animal[1]
+#     zoo.add_animal(species, name)
+# info = input()
+# print(zoo.get_info(info))
 
 
 # class Zoo:
