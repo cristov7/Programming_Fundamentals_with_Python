@@ -39,7 +39,12 @@ Online judge system - https://judge.softuni.org/
 - Retake Final Exam
 
 
-# Additional resources
+# Additional resources:
 - Programming Fundamentals with Python
 
 https://softuni.bg/trainings/3840/programming-fundamentals-with-python-september-2022
+
+
+# Certificate of Programming Fundamentals with Python:
+
+![Programming Fundamentals with Python](https://user-images.githubusercontent.com/114032977/231401716-bb5206dd-0f17-4155-9982-f676f06a48c2.png)
